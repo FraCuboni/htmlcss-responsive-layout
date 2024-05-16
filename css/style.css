@@ -5,41 +5,51 @@
     font-family: "PT Sans", sans-serif;
 }
 
+
+/* HEADER */
 header{
+    height: 70px;
+    width: 100%;
+}
+
+header>div{
     height: 70px;
     width: 100%;
     background-color:lightblue; 
 
     position: fixed;
     top: 0;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header>*{
-    padding: 5%;
+    z-index: 10;
 }
 
 .logo{
+    position: absolute;
+    transform: translate(0, -50%);
+    z-index: 10;
+    left: 10%;
+    top: 50%;
 }
 
 .hamburger{
+    position: absolute;
+    transform: translate(-100%, -50%);
+    z-index: 10;
+    right: 10%;
+    top: 50%;
 }
 
 
 /* MAIN */
 .container{
     width: 100%;
-    padding: 110px 30px 30px;
+    padding: 10% 5%;
     background-color: red;
 }
 
 .box{
     width: 100%;
     aspect-ratio : 1 / 1;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
     background-color: blue;
     border: 1px solid black;
     border-radius: 20px;
@@ -57,7 +67,6 @@ header>*{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 110px 5% 20px;
     }
 
     .box{
@@ -79,7 +88,7 @@ header>*{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 110px 20% 20px;
+        padding: 5% 20%;
     }
 
     .box{
