@@ -92,11 +92,21 @@ header>div{
     width: 100%;
 }
 
-.strategic-planning>.box.big{
+.strategic-planning>.box{
     background-color: white;
 }
 
 /* TESTIMONIALS */
+.profile-pic{
+    max-width: 100%;
+    border-radius: 50%;
+    aspect-ratio : 1 / 1;
+    overflow: hidden;
+}
+.profile-pic>img{
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -150,12 +160,15 @@ header>div{
 
     .testimonials>.box{
             width: 100%;
-            aspect-ratio: 3 / 1;
             padding: 0;
             display: flex;
             flex-direction: row;
             align-items: center;
-        }
+    }
+
+    .box.test{
+         flex-direction: column;
+    }
 
     .profile-pic{
     width: calc( 100% / 3 );
@@ -225,7 +238,6 @@ header>div{
     
     .box-image{
         width: 35%;
-        background-color: red;
     }
     
     .strategic-planning>.box{
