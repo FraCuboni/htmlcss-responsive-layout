@@ -31,46 +31,40 @@ header>*{
 
 /* MAIN */
 .container{
-    min-height: 30px;
     width: 100%;
-    margin-top: 70px;
-    padding: 10px 0;
+    padding: 90px 20px 20px;
     background-color: red;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-    
-    
-
 }
 
 .box{
-    width: 80%;
-    height: 0;
-    padding-bottom: 100%;
+    width: 100%;
+    aspect-ratio : 1 / 1;
+    margin-bottom: 20px;
     background-color: blue;
-
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
 .box.big{
-    width: 80%;
-    height: 0;
-    padding-bottom: 200%;
+    aspect-ratio : 1 / 2;
     background-color: yellow;
 }
 
-@media screen and (min-width:568px){
+/* @media screen and (min-width:568px){
     
     .container{
+        display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .box{
-        
+        width: calc(100% / 3 - 15px);
     }
-}
+
+    .box.big{
+        width: calc(( 100% / 3 ) * 2 - 5px);
+        background-color: yellow;
+    }
+} */
