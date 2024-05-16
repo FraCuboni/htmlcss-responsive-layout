@@ -32,7 +32,7 @@ header>*{
 /* MAIN */
 .container{
     width: 100%;
-    padding: 90px 20px 20px;
+    padding: 110px 30px 30px;
     background-color: red;
 }
 
@@ -57,6 +57,7 @@ header>*{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 110px 5% 20px;
     }
 
     .box{
@@ -68,5 +69,27 @@ header>*{
         width: calc(( 100% / 3 ) * 2 - 5px);
         background-color: yellow;
         aspect-ratio : 1 / 1.2;
+    }
+}
+
+@media screen and (min-width:1024px){
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 110px 20% 20px;
+    }
+
+    .box{
+        width: calc(100% / 3 - 15px);
+        aspect-ratio : 1 / 1;
+    }
+
+    .box.big{
+        width: calc(( 100% / 3 ) * 2 - 5px);
+        background-color: yellow;
+        aspect-ratio : 1 / 0.5;
     }
 }
