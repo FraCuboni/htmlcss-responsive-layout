@@ -70,6 +70,10 @@ header>div{
     width: 100%;
 }
 
+.developement{
+    background-color: white;
+}
+
 
 
 @media screen and (min-width:568px){
@@ -89,6 +93,14 @@ header>div{
     .box.big{
         width: calc(( 100% / 3 ) * 2 - 5px);
         aspect-ratio : 1 / 1.2;
+    }
+
+    .container.violet{
+        display: flex;
+    }
+
+    .container.violet>*{
+        width: 100%;
     }
 }
 
