@@ -50,7 +50,7 @@ header>*{
     background-color: yellow;
 }
 
-/* @media screen and (min-width:568px){
+@media screen and (min-width:568px){
     
     .container{
         display: flex;
@@ -61,10 +61,12 @@ header>*{
 
     .box{
         width: calc(100% / 3 - 15px);
+        aspect-ratio : 1 / 1.7;
     }
 
     .box.big{
         width: calc(( 100% / 3 ) * 2 - 5px);
         background-color: yellow;
+        aspect-ratio : 1 / 1.2;
     }
-} */
+}
