@@ -95,11 +95,7 @@ header>div{
         aspect-ratio : 1 / 1.2;
     }
 
-    .container.violet{
-        display: flex;
-    }
-
-    .container.violet>*{
+    .box.big.developement{
         width: 100%;
     }
 }
@@ -123,4 +119,35 @@ header>div{
         width: calc(( 100% / 3 ) * 2 - 5px);
         aspect-ratio : 1 / 0.5;
     }
+    
+    .container.violet{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        gap: 5%;
+    }
+
+    .container.violet>*{
+        margin-bottom: 0;
+    }
+    
+    .box-image{
+        width: 35%;
+        background-color: red;
+    }
+
+    .img{
+        width: 100%;
+    }
+
+    .box.big.developement{
+        width: 35%;
+        aspect-ratio : 1 / 1.2;
+    }
+
+
+
+
 }
