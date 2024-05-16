@@ -59,46 +59,60 @@ header>div{
 
 .box{
     width: 100%;
-    aspect-ratio : 1 / 1;
-    padding: 10%;
+    min-height: 50px;
     margin-bottom: 5%;
-    background-color: #b5ddff;
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
 }
+
 
 .icon-box, .text-box, .img-box{
     width: 100%;
-    height: 50%;
-}
-
-.box.big{
-    aspect-ratio : 1 / 2;
-
 }
 
 .violet{
     background-color: #9792e4;
 }
 
+
+
+
+/*  APPLICATION */
+
+.application>.box{
+    background-color: #b5ddff;
+}
+
+
+/* STRATEGIC-PLANNING */
+
 .box-image{
     width: 100%;
-    aspect-ratio : 1 / 1;
 }
 
-.img{
-    width: 100%;
-}
-
-.developement{
+.strategic-planning>.box.big{
     background-color: white;
 }
 
+/* TESTIMONIALS */
 
+
+
+/* WORKING WITH US */
+
+
+
+
+
+
+
+
+/* TABLET */
 
 @media screen and (min-width:568px){
-    
+
     .container{
         display: flex;
         flex-direction: row;
@@ -106,46 +120,73 @@ header>div{
         justify-content: space-between;
     }
 
-    .box{
+    /*  APPLICATION */
+
+    .application>.box{
         width: calc(100% / 3 - 15px);
-        aspect-ratio : 1 / 1.7;
     }
 
-    .box.big{
+    .application>.box.big{
         width: calc(( 100% / 3 ) * 2 - 5px);
-        aspect-ratio : 1 / 1.2;
     }
 
-    .box.big.developement{
-        width: 100%;
+
+
+    /* STRATEGIC-PLANNING */
+
+    .strategic-planning>.box{
+            width: 100%;
     }
+
+
+
+
+    /* TESTIMONIALS */
 
     .container.testimonials{
         flex-direction: column;
     }
 
-    .box.test-box{
-        width: 100%;
-        aspect-ratio: 3 / 1;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+
+    .testimonials>.box{
+            width: 100%;
+            aspect-ratio: 3 / 1;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
 
     .profile-pic{
-        width: calc( 100% / 3 );
+    width: calc( 100% / 3 );
     }
+
     .profile-desc{
         width: calc(( 100% / 3 ) * 2) ;
     }
 
 
+    /* WORKING WITH US */
     
+    .working-with-us>h2{
+        width: 100%;
+    }
+
+
+    
+    
+
+        
 }
 
+
+
+
+
+/*  DESKTOP  */
 @media screen and (min-width:1024px){
-    
+
+
     .container{
         display: flex;
         flex-direction: row;
@@ -154,17 +195,22 @@ header>div{
         padding: 5% 20%;
     }
 
+
     .box{
         width: calc(100% / 3 - 15px);
-        aspect-ratio : 1 / 1;
     }
+
 
     .box.big{
         width: calc(( 100% / 3 ) * 2 - 5px);
-        aspect-ratio : 1 / 0.5;
     }
     
-    .container.violet{
+    /*  APPLICATION */
+
+    /* STRATEGIC-PLANNING */
+    
+    
+    .strategic-planning{
         max-width: 100%;
         display: flex;
         justify-content: center;
@@ -173,24 +219,32 @@ header>div{
         gap: 5%;
     }
 
-    .container.violet>*{
-        margin-bottom: 0;
+    .strategic-planning>*{
+            margin-bottom: 0;
     }
     
     .box-image{
         width: 35%;
         background-color: red;
     }
-
-    .img{
-        width: 100%;
-    }
-
-    .box.big.developement{
+    
+    .strategic-planning>.box{
         width: 35%;
-        aspect-ratio : 1 / 1.2;
     }
 
+    /* TESTIMONIALS */
+
+    /* WORKING WITH US */
+    
+
+    
+    
+
+    
+    
+    
+
+    
 
 
 
