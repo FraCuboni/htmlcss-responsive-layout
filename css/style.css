@@ -195,11 +195,37 @@ i{
 
 
 
-
-
-
-
 /* ABOUT US */
+.about-us{
+    text-align: left;
+    display: fle;
+}
+
+.about-us>.text-box>h1{
+    color: #9792e4;
+    padding: 1rem 0 2rem;
+}
+
+.about-us>.box>.profile-pic{
+    border: 1px solid black;
+    width: 70%;
+}
+
+.about-us>.box>.profile-desc>p{
+    color: #9792e4;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+
+/* GET STARTED */
+.container.get-started{
+
+}
+
+
+
 
 
 /* FOOTER */
@@ -321,15 +347,41 @@ footer{
 
     /* ABOUT US */
 
-    .container.about-us{
+    .about-us{
         flex-direction: row;
     }
-    .container.about-us>.text-box{
+    .about-us>.text-box{
         width: 60%;
     }
+
+    .about-us>.text-box>h1{
+        font-size: 4rem;
+    }
+
     .container.about-us>.box{
         width: 40%;
     }
+
+    .about-us>.box>.profile-pic{
+        width: 100%;
+    }
+
+    .about-us>.box>.profile-desc>p{
+        color: #9792e4;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .about-us>.box>.profile-desc>div{
+        padding: 0;
+    }
+
+
+    .about-us>.box>.profile-desc>div{
+        display: block;
+    }
+
+
 
 
 
@@ -454,8 +506,21 @@ footer{
         font-size: 3.5rem;
     }
 
+    
+    
     /* ABOUT US */
+    .about-us{
+        width: 92%;
+        margin: 0 auto;
+    }
 
+    .container.about-us>.box{
+        width: 35%;
+    }
+
+    .about-us>.box>.profile-pic{
+        width: 100%;
+    }
     
 
     
