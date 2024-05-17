@@ -16,6 +16,12 @@ img{
     max-width: 100%;
 }
 
+.button{
+    background-color: red;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+}
+
 
 
 /* HEADER */
@@ -113,9 +119,14 @@ header>div{
 /* WORKING WITH US */
 
 
+/* ABOUT US */
 
 
-
+/* FOOTER */
+footer{
+    background-color: black;
+    color: white;
+}
 
 
 
@@ -185,8 +196,29 @@ header>div{
         width: 100%;
     }
 
+    .working-with-us>.box{
+        width: 50%;
+    }
 
+    /* ABOUT US */
+
+    .container.about-us{
+        flex-direction: row;
+    }
+    .container.about-us>.text-box{
+        width: 60%;
+    }
+    .container.about-us>.box{
+        width: 40%;
+    }
+
+    /* GET STARTED */
     
+    .container.get-started{
+        display: block;
+    }
+
+    /*  */
     
 
         
@@ -247,6 +279,12 @@ header>div{
     /* TESTIMONIALS */
 
     /* WORKING WITH US */
+    .working-with-us>.box{
+        width: calc(100% / 3);
+    }
+
+    /* ABOUT US */
+
     
 
     
