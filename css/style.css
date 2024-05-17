@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "PT Sans", sans-serif;
-    text-align: center;
 }
 
 a{
@@ -16,8 +15,26 @@ img{
     max-width: 100%;
 }
 
+body{
+    text-align: center;
+}
 
+.button{
+    padding: 0.5rem 2.5rem;
+    border-radius: 20px;
+}
 
+.circle-button{
+    margin: 0 auto;
+}
+
+.blue{
+    background-color: #0084fd;
+}
+
+.violet{
+    background-color: #9792e4;
+}
 
 
 
@@ -30,7 +47,6 @@ header{
 header>div{
     height: 70px;
     width: 100%;
-    background-color:#0084fd; 
 
     position: fixed;
     top: 0;
@@ -62,30 +78,27 @@ header>div{
 
 .box{
     width: 100%;
-    padding: 0 1em;
+    padding: 0 1.5em;
     min-height: 50px;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+}
+
+h2{
+    font-size: 1.8rem;
+    padding: 1.5rem 0;
 }
 
 
-.icon-box, .text-box, .img-box{
-    width: 100%;
+h3{
+    color: #0084fd;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
 }
-
-.violet{
-    background-color: #9792e4;
-}
-
-
-
-.button{
-    background-color: red;
-    padding: 0.5em 1em;
-    border-radius: 20px;
+p{
+    padding-bottom: 1.5rem;
 }
 
 
@@ -95,34 +108,75 @@ header>div{
     background-color: #b5ddff;
 }
 
-.text-box.h3{
-    color: #0084fd;
-    padding: ;
-    font-size: 25px;
+.text-box{
+    padding: 0 0 2rem;
 }
+
+.icon-box{
+    padding: 2rem 0 0;
+    width: 100%;
+
+}
+
+i{
+    font-size: 6rem;
+    color: #0084fd;
+}
+
+.icon-box, .text-box, .img-box{
+    width: 100%;
+}
+
+.application>.box.big{
+    text-align: left;
+}
+
+
 
 /* STRATEGIC-PLANNING */
 
 .box-image{
     width: 100%;
+    text-align: left;
+    color: white;
 }
 
 .strategic-planning>.box{
     background-color: white;
 }
 
+
+
 /* TESTIMONIALS */
+
+.testimonials>.box.test>h2{
+    color: #9792e4;
+    padding-top: 0;
+}
+
+
+
 .profile-pic{
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 50%;
     aspect-ratio : 1 / 1;
     overflow: hidden;
+    margin: 1.5rem auto;
 }
+
 .profile-pic>img{
     height: 100%;
     object-fit: cover;
+    filter: brightness(120%) saturate(180%);
 }
 
+.profile-desc{
+    color: white;
+}
+.profile-desc :last-child{
+    font-size: 1.1em;
+    font-weight: 600;
+}
 
 
 /* WORKING WITH US */
@@ -136,6 +190,15 @@ footer{
     background-color: black;
     color: white;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -158,6 +221,12 @@ footer{
 
     .application>.box.big{
         width: calc(( 100% / 3 ) * 2 - 5px);
+        padding-bottom: 0;
+    }
+
+    .img-box{
+        width: 50%;
+        position: relative;
     }
 
 
@@ -166,7 +235,22 @@ footer{
 
     .strategic-planning>.box{
             width: 100%;
+            color: black;
     }
+    .strategic-planning>.box>.text-box>h3{
+        color: black;
+    }
+
+    .strategic-planning>.box>.img-box{
+        width: 100%;
+    }
+
+    .box-image>h2{
+        font-size: 4rem;
+    }
+
+
+
 
 
 
@@ -177,10 +261,9 @@ footer{
         flex-direction: column;
     }
 
-
     .testimonials>.box{
             width: 100%;
-            padding: 0;
+            padding: 0 2em;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -195,8 +278,11 @@ footer{
     }
 
     .profile-desc{
-        width: calc(( 100% / 3 ) * 2) ;
+        width: calc(( 95% / 3 ) * 2) ;
     }
+
+
+
 
 
     /* WORKING WITH US */
@@ -208,6 +294,8 @@ footer{
     .working-with-us>.box{
         width: 50%;
     }
+
+
 
     /* ABOUT US */
 
@@ -221,17 +309,20 @@ footer{
         width: 40%;
     }
 
+
+
     /* GET STARTED */
     
     .container.get-started{
         display: block;
     }
 
-    /*  */
-    
 
-        
+    
+    
 }
+
+
 
 
 
@@ -258,8 +349,28 @@ footer{
     .box.big{
         width: calc(( 100% / 3 ) * 2 - 5px);
     }
+
+    p{
+        line-height: 1.5rem;
+    }
     
     /*  APPLICATION */
+
+    .application>.box.big{
+        flex-direction: row;
+    }
+    .application>.box.big>*{
+        width: 50%;
+    }
+    .application>.box.big>.text-box>*{
+        margin-bottom: 1rem;
+    }
+
+    .application>.box.big>.img-box>img{
+        width: 85%;
+    }
+
+    
 
     /* STRATEGIC-PLANNING */
     
@@ -280,7 +391,11 @@ footer{
     .box-image{
         width: 35%;
     }
-    
+
+    .box-image>h2{
+        font-size: 2rem;
+    }
+
     .strategic-planning>.box{
         width: 35%;
     }
