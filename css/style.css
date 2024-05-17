@@ -9,6 +9,7 @@
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 img{
@@ -181,6 +182,22 @@ i{
 
 /* WORKING WITH US */
 
+.working-with-us>.box{
+    background-color: white;
+    text-align: left;
+    padding: 2rem;
+    color: #9792e4;
+}
+
+.working-with-us>.box>h3{
+    color: #9792e4;
+}
+
+
+
+
+
+
 
 /* ABOUT US */
 
@@ -286,14 +303,19 @@ footer{
 
 
     /* WORKING WITH US */
-    
+
     .working-with-us>h2{
-        width: 100%;
+        font-size: 3rem;
+        color: white;
+        padding-bottom: 4rem;
+        margin: 0 auto;
     }
 
     .working-with-us>.box{
-        width: 50%;
+        width: calc(50% - 1rem);
     }
+
+
 
 
 
@@ -419,8 +441,17 @@ footer{
 
 
     /* WORKING WITH US */
+
+    .working-with-us>h2{
+        width: 100%;
+    }
+
     .working-with-us>.box{
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 1rem) ;
+    }
+
+    .working-with-us>.box>h1{
+        font-size: 3.5rem;
     }
 
     /* ABOUT US */
