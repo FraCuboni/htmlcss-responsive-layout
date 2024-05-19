@@ -331,6 +331,7 @@ footer>a{
 
     .application>.box{
         width: calc(100% / 3 - 15px);
+        position: relative;
     }
 
     .application>.box.big{
@@ -338,9 +339,10 @@ footer>a{
         padding-bottom: 0;
     }
 
-    .img-box{
+    .box.big>.img-box{
         width: 50%;
-        position: relative;
+        position: absolute;
+        bottom: 0;
     }
 
 
@@ -433,7 +435,7 @@ footer>a{
         width: 45%;
     }
 
-    .about-us>.box>.profile-pic{
+    .p-pic-fix>.profile-pic{
         width: 100%;
     }
 
@@ -514,6 +516,13 @@ footer>a{
     .application>.box.big>.text-box>*{
         margin-bottom: 1rem;
     }
+
+    .application>.box.big>.img-box{
+        width: 50%;
+        left: 50%;
+        bottom: 0;
+    }
+
 
     .application>.box.big>.img-box>img{
         width: 85%;
