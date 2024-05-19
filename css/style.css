@@ -27,6 +27,11 @@ body{
 
 .circle-button{
     margin: 0 auto;
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
 }
 
 .blue{
@@ -35,6 +40,10 @@ body{
 
 .violet{
     background-color: #9792e4;
+} 
+
+.italic{
+    font-style: italic;
 }
 
 
@@ -66,8 +75,13 @@ header>div{
     position: absolute;
     transform: translate(-100%, -50%);
     z-index: 10;
-    right: 10%;
+    right: 0;
     top: 50%;
+}
+
+.hamburger>i{
+    color: white;
+    font-size: 2em;
 }
 
 
@@ -146,6 +160,13 @@ i{
     background-color: white;
 }
 
+.circle-button>i{
+    font-size: 1.2rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
 
 
 /* TESTIMONIALS */
@@ -173,11 +194,22 @@ i{
 
 .profile-desc{
     color: white;
+    display: inline;
 }
+
+.profile-desc>p:first-of-type::before{
+  content: "\275D";
+}
+.profile-desc>p:first-of-type::after{
+    content: "\275E";
+  }
+
 .profile-desc :last-child{
     font-size: 1.1em;
     font-weight: 600;
 }
+
+
 
 
 /* WORKING WITH US */
@@ -206,9 +238,18 @@ i{
     padding: 1rem 0 2rem;
 }
 
-.about-us>.box>.profile-pic{
-    border: 1px solid black;
-    width: 70%;
+.about-us>.box>.p-pic-fix{
+    width: 90%;
+    position: relative;
+    right: 1rem;
+}
+
+#commapic{
+    font-size: 5rem;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .about-us>.box>.profile-desc>p{
@@ -235,7 +276,7 @@ i{
 }
 
 .get-started>.button{
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 3rem;
     background-color: white;
     color: #9792e4;
 }
@@ -418,6 +459,10 @@ footer>a{
         align-items: center;
         padding: 2rem 25%;
         text-align: center;
+    }
+
+    footer{
+        padding: 2rem 25%;
     }
 
 
